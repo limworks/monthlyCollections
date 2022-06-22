@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Fundamentals – Part 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="w-screen h-screen bg-[#232949]">
+
+      <div class=" flex justify-center items-center bg-[#232949]">
+        <div class="p-8 md:min-w-[750px] md:mt-10 lg:min-w-[1020px]">
+          <div class="mb-8">
+            <h1 class="text-white text-3xl font-medium mb-2">Mėnesinio surinkimo skaičiuoklė</h1>
+          </div>
+          <div class="flex flex-col-reverse  gap-8 md:flex-row">
+            <div class=" flex flex-col justify-between md:w-1/2">
+              <div class="flex flex-col mb-6">
+                <label for="goal" class="text-[#4a9cff] font-semibold text-sm mb-2">Šio mėnesio planas</label>
+                <input id="monthlyGoal" type="text" name="goal" class="bg-[#171e3b] text-white text-xl p-4 border-2 border-[#30365a] rounded-md">
+              </div>
+              <div class="flex flex-col mb-6">
+                <label for="currentAmount" class="text-[#4a9cff] font-semibold text-sm mb-2">Šiuo metu surinkta suma</label>
+                <input id="monthlyCurrent" type="text" name="currentAmount" class="bg-[#171e3b] text-white text-xl p-4  border-2 border-[#30365a] rounded-md">
+              </div>
+              <div class="flex flex-col-reverse gap-4 md:flex-row md:justify-between">
+                <button id="resetBtn" class="py-1 md:py-4 md:px-10 bg-[#30365a] rounded-md text-white font-medium border-2 border-[#525b91]">Išvalyti</button>
+                <button id="calculateBtn" class="py-4 px-10 bg-[#4a9cff] rounded-md text-white font-medium border-2 border-[#3875c0]">Skaičiuoti</button>
+              </div>
+            </div>
+            <div class="md:w-1/2">
+              <div class=" h-full flex flex-col justify-center px-10 py-10 rounded-md bg-[#30365a]">
+                <h3 class="text-center text-white text-xl font-medium">Šiuo metu surinkta:</h3>
+                <p id="summaryAmount" class="py-6 mb-8 text-center text-[#4a9cff] text-7xl font-semibold border-b border-[#525b91]">0</p>
+                <div class="flex justify-around">
+                  <div>
+                    <p class="text-[#4a9cff] font-medium">Iki 70% liko:</p>
+                    <p id="summaryOne" class="text-white text-lg font-medium">0</p>
+                  </div>
+                  <div>
+                    <p class="text-[#4a9cff] font-medium">Iki 80% liko:</p>
+                    <p id="summaryTwo" class="text-white text-lg font-medium">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
+
+<!-- primary - #232949 -->
+<!-- card - #30365a -->
+<!-- text - #4a9cff -->
