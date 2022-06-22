@@ -21,7 +21,7 @@ calculateBtn.addEventListener('click', () => {
     const currentPercentage = (currentValue*100)/goalValue;
 
     if(goalValue && currentValue){
-        summaryAmount.innerHTML = currentPercentage.toFixed(2)+'%';
+        summaryAmount.innerHTML = currentPercentage > 100 ? '100%' : currentPercentage.toFixed(2)+'%';
         summaryOne.innerHTML = Math.ceil(seventy-currentValue) > 0 ? Math.ceil(seventy-currentValue)+'€' : 0+'€';
         summaryTwo.innerHTML = Math.ceil(eighty-currentValue) > 0 ? Math.ceil(eighty-currentValue)+'€' : 0+'€';
     }
